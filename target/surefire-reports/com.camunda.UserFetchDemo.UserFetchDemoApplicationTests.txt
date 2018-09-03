@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.camunda.UserFetchDemo.UserFetchDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 42.782 s <<< FAILURE! - in com.camunda.UserFetchDemo.UserFetchDemoApplicationTests
+contextLoads(com.camunda.UserFetchDemo.UserFetchDemoApplicationTests)  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'run' defined in com.camunda.UserFetchDemo.UserFetchDemoApplication: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'run' threw exception; nested exception is com.camunda.UserFetchDemo.TaskException
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.CommandLineRunner]: Factory method 'run' threw exception; nested exception is com.camunda.UserFetchDemo.TaskException
+Caused by: com.camunda.UserFetchDemo.TaskException
+
